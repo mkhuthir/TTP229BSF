@@ -1,6 +1,6 @@
-# TTP229
-16 KEYS OR 8 KEYS TOUCH PAD DETECTOR IC
+# TTP229 Library
 
+TTP229-BSF 16 KEYS OR 8 KEYS TOUCH PAD DETECTOR IC
 
 Data sheet: https://www.tontek.com.tw/uploads/product/97/TTP229-BSF_V1.1_EN.pdf
 
@@ -16,8 +16,8 @@ FEATURES
 * Built-in regulator
 * Stand-by current
 At 3V, and sleep mode slow sampling rate 8Hz：
-=> Typical 2.5uA for 16 input keys
-=> Typical 2.0uA for 8 input keys
+  * => Typical 2.5uA for 16 input keys
+  * => Typical 2.0uA for 8 input keys
 * Provides to set 8 direct keys or 16 direct keys by option
 * Provides to set 8 separate outputs only for 8 direct input keys mode
 * Has a 2-wires serial output interface, both can use for 8 and 16 direct input keys mode
