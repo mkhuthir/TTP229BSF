@@ -2,6 +2,7 @@
  *  Muthanna Alwahash 2020/21
  *
  */
+//------------------------------------------------------------------------------------------------------------
 
 #include <Arduino.h>
 #include <ttp229.h>
@@ -9,10 +10,13 @@
 //------------------------------------------------------------------------------------------------------------
 TTP229::TTP229(int pinSCL, int pinSDO)
 {
-  _pinSCL = pinSCL;
-  _pinSDO = pinSDO;
-  pinMode(pinSCL, OUTPUT); 
-  pinMode(pinSDO, INPUT);
+  // MCU Used pins
+  _pinSCL = pinSCL;         // Serial Clock Pin
+  _pinSDO = pinSDO;         // Serial Data Output Pin
+
+  // Set pins directions
+  pinMode(pinSCL, OUTPUT);  // Serial Clock Pin
+  pinMode(pinSDO, INPUT);   // Serial Data Output Pin
 }
 
 //------------------------------------------------------------------------------------------------------------
