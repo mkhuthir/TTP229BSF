@@ -6,19 +6,23 @@
 #ifndef _ttp229_h_
 #define _ttp229_h_
 
-#define SCL 8
-#define SDO 9
-
-
+//------------------------------------------------------------------------------------------------------------
 class TTP229 {
+    public:
+        TTP229(
+            // MCU Pins Selection
+            int pinSCL = 8,   // Serial Clock Pin - Default is 8
+			int pinSDO = 9    // Serial Data Output Pin - Default is 9
+        );
 
-    void getKeys(void);
+        byte getKeys(void);
 
+    private:
+        int _pinSCL;           // Serial Clock Pin
+        int _pinSDO;           // Serial Data Output Pin
 };
 
-byte Read_TTP229_Keypad(void);
-
-
+//------------------------------------------------------------------------------------------------------------
 
 
 #endif
