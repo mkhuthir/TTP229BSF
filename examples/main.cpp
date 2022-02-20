@@ -1,8 +1,11 @@
 #include <Arduino.h>
 #include <ttp229.h>
 
+#define pinSCL 8
+#define pinSDO 9
+
 byte key;
-TTP229 TouchPad(8,9);
+TTP229 TouchPad(pinSCL,pinSDO);
 
 void setup()
 {
@@ -12,12 +15,10 @@ void setup()
 void loop()
 {
  key = TouchPad.getKeys();
- if (key)
-  Serial.println(key);
- delay(10);
+ if (key) 
+ {
+  Serial.print(key);
+  Serial.print("-");
+ };
+ delay(100);
 }
-
-
-
-
-
