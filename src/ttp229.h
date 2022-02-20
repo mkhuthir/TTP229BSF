@@ -11,9 +11,8 @@
 
 
 class TTP229 {
-    public:
-        void TTP229(void);
-        void TTP229::getKeys(void);
+
+    void getKeys(void);
 
 };
 
