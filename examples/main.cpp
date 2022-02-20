@@ -2,20 +2,22 @@
 #include <ttp229.h>
 
 byte key;
+TTP229 TouchPad(8,9);
 
 void setup()
 {
  Serial.begin(9600);
- pinMode(SCL, OUTPUT); 
- pinMode(SDO, INPUT);
 }
 
 void loop()
 {
- key = Read_TTP229_Keypad();
+ key = TouchPad.getKeys();
  if (key)
   Serial.println(key);
  delay(10);
 }
+
+
+
 
 
